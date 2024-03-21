@@ -1,0 +1,66 @@
+{
+  "name": "rerumab",
+  "version": "1.0.0",
+  "description": "This repo hold several different project that help developing with typescript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TierraQuitzon/rerumab.git"
+  },
+  "author": "ErwinMayer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^7.0.0",
+    "@types/yargs": "^13.0.0",
+    "fs-extra": "^8.0.1",
+    "tree-kill": "^1.2.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1",
+    "yargs": "^13.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "ts-node": "node ./bin/ts-node",
+    "play": "yarn ts-node bin/playground.ts",
+    "all": "node bin/workspaces",
+    "test": "yarn ts-node ./bin/runTest.ts dbg",
+    "watch": "tsc -b -w",
+    "compile": "tsc -b",
+    "clean": "rimraf dist node_modules",
+    "cleand": "rimraf dist",
+    "gulp": "node --inspect-brk node_modules/gulp/bin/gulp"
+  },
+  "workspaces": [
+    "register",
+    "compiler",
+    "constants",
+    "extra-types",
+    "loaders",
+    "tree-node",
+    "mem-fs",
+    "plugin",
+    "plugin/tests",
+    "serialization",
+    "server",
+    "server/tests",
+    "ts-shared",
+    "utils"
+  ],
+  "disabled-workspaces": [
+    "plugin",
+    "plugin/tests",
+    "serialization",
+    "server",
+    "server/tests",
+    "ts-shared",
+    "utils"
+  ],
+  "bin": {
+    "tscx": "./compiler/.bin/tscx.js"
+  },
+  "bugs": {
+    "url": "https://github.com/TierraQuitzon/rerumab.git/issues"
+  }
+}

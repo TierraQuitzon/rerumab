@@ -1,0 +1,16 @@
+{
+    "name": "@ts-extras/utils",
+    "description": "asd",
+    "keywords": [
+        "asd"
+    ],
+    "version": "0.0.0",
+    "main": "./dist/index.js",
+    "private": true,
+    "devDependencies": {
+        "@types/gulp": "^4.0.6",
+        "@types/node": "^12.0.4",
+        "@types/through2": "^2.0.34",
+        "gulp": "^4.0.2"
+    }
+}

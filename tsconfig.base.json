@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "stripInternal": true,
+        "experimentalDecorators": true,
+        "incremental": true,
+        "composite": true,
+        "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
+        "declaration": true,
+        "declarationMap": true,
+        "types": [
+            "@ts-extras/types",
+            "node"
+        ]
+    }
+}

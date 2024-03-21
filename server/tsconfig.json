@@ -1,0 +1,28 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "tsBuildInfoFile": "./dist/tsbuild.info",
+        "paths": {
+            "@ts-extras/serialization/*": [
+                "../serialization/src/*"
+            ],
+            "@ts-extras/constants/*": [
+                "../constants/src/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "references": [
+        {
+            "path": "../constants/"
+        },
+        {
+            "path": "../serialization"
+        }
+    ]
+}
